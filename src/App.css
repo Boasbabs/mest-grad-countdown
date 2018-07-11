@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
 .App {
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /*animation: App-logo-spin infinite 20s linear;*/
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #33C7C8;
   padding: 20px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .App-intro {
