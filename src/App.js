@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo2.png';
 import './App.css';
+import Clock from './Clock'
 
 class App extends Component {
     constructor(props) {
@@ -25,12 +26,13 @@ class App extends Component {
                     <h3>Graduation Date: {this.state.deadline}</h3>
                 </header>
                 <div className="App-intro">
-                    <div className="Countdown-meter">
-                        <div>31 days</div>
-                        <div>15 hours</div>
-                        <div>24 minutes</div>
-                        <div>24 seconds</div>
-                    </div>
+                    {/*<div className="Countdown-meter">*/}
+                        {/*<div>31 days</div>*/}
+                        {/*<div>15 hours</div>*/}
+                        {/*<div>24 minutes</div>*/}
+                        {/*<div>24 seconds</div>*/}
+                    {/*</div>*/}
+                    <Clock deadline={this.state.deadline}/>
                     <div className="Countdown-input">
                         <input
                             type="text"
