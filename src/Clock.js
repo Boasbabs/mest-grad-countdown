@@ -36,10 +36,10 @@ class Clock extends Component {
 
         return(
             <div className="Countdown-meter">
-                <div>{this.state.days} days</div>
-                <div>{this.state.hours} hours</div>
-                <div>{this.state.minutes} minutes</div>
-                <div>{this.state.seconds} seconds</div>
+                <div className="count__key">{this.state.days} days</div>
+                <div className="count__key">{this.state.hours} hours</div>
+                <div className="count__key">{this.state.minutes} minutes</div>
+                <div className="count__key">{this.state.seconds} seconds</div>
             </div>
         )
     }

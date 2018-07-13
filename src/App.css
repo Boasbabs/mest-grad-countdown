@@ -6,7 +6,6 @@
 }
 
 .App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
   height: 80px;
 }
 
@@ -14,6 +13,7 @@
   background-color: #33C7C8;
   padding: 20px;
   color: white;
+  height: 30vh;
 }
 
 .App-title {
@@ -23,9 +23,75 @@
 
 .App-intro {
   font-size: large;
+  padding-top: 2em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.title-container {
+  height: 63vh;
+  background: linear-gradient(
+          rgba(52, 73, 94,0.75),
+          rgba(52, 73, 94,0.75)
+  ), url("img/eit.jpg") no-repeat center;
+  background-size: cover;
+  color: #ffffff;
 }
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #ffffff;
+  width: 25%;
+  padding-bottom: 4px;
+  color: #ffffff !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+button {
+  border: 0;
+  padding: 10px 20px;
+  margin: 0 2px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #33C7C8;
+  color: #fff;
+  /*font-weight: bold;*/
+}
+
+button:active {
+  outline: none;
+}
+
+.count__key {
+  color: #ffffff;
+  border-bottom: solid 2px rgba(255,255,255,0.06);
+  padding: 2px 0;
+  margin: 0 0.63em;
+  font-size: 1.71em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+}
+

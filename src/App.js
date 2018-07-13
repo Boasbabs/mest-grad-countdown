@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import logo from './logo2.png';
 import './App.css';
 import Clock from './Clock'
@@ -12,6 +13,10 @@ class App extends Component {
         }
     }
 
+    static propTypes = {
+        deadline: PropTypes.number,
+    }
+
     changeDeadline() {
         this.setState({
             deadline: this.state.newDeadline,
@@ -23,23 +28,18 @@ class App extends Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Countdown to 2018 EIT's Graduation</h1>
-                    <h3>Graduation Date: {this.state.deadline}</h3>
+                    <h3><strong>Date:</strong> {this.state.deadline}</h3>
                 </header>
-                <div className="App-intro">
-                    {/*<div className="Countdown-meter">*/}
-                        {/*<div>31 days</div>*/}
-                        {/*<div>15 hours</div>*/}
-                        {/*<div>24 minutes</div>*/}
-                        {/*<div>24 seconds</div>*/}
-                    {/*</div>*/}
+                <div className="App-intro title-container">
                     <Clock deadline={this.state.deadline}/>
+                    <h4>You Can Check New Dates</h4>
                     <div className="Countdown-input">
                         <input
                             type="text"
-                            placeholder={'enter date'}
+                            placeholder={'eg: December 25, 2018'}
                             onChange={(event) => this.setState({newDeadline: event.target.value})}
                         />
-                        <button onClick={() => this.changeDeadline()}>Submit</button>
+                        <button onClick={() => this.changeDeadline()}>Check Days Left</button>
                     </div>
 
                 </div>
